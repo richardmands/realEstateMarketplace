@@ -4,8 +4,6 @@ pragma solidity ^0.5.5;
 import "./ZokratesVerifier.sol";
 import "./ERC721Mintable.sol";
 
-// TODO define a contract call to the zokrates generated solidity contract <Verifier> or <renamedVerifier>
-
 // TODO define another contract named SolnSquareVerifier that inherits from your ERC721Mintable class
 contract SolnSquareVerifier is Verifier, CustomERC721Token {
 
