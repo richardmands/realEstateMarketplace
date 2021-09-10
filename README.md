@@ -38,7 +38,7 @@ NFTs available on OpenSea
 ## Tests
 - Mocha for contract tests
 - Errors visible in console logs are confirming failure when account with wrong permissions attempts an action.
-- [See Tests Here](https://github.com/richardmands/realEstateMarketplace/blob/master/test/TestSupplychain.js)
+- [See Tests Here](https://github.com/richardmands/realEstateMarketplace/tree/master/tests)
 
 ## Required Libraries
 - Truffle v5.3.6
