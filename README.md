@@ -2,7 +2,8 @@
 My Version of Udacity Real Estate Marketplace
 
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
-This repository contains Smart Contract code in Solidity (using Truffle), tests (also using Truffle) and dApp scaffolding (React).
+
+This repository contains Smart Contract code in Solidity (using Truffle), tests (also using Truffle), dApp scaffolding (React) and ZoKrates for simulated verification of ownership.
 
 ## NFTs on OpenSea
 https://testnets.opensea.io/collection/capstone-bnnnpllu2b
@@ -14,7 +15,7 @@ https://rinkeby.etherscan.io/tx/0x2e1ae78e4b805316288fab2211837c60c7cbf7c34a5637
 
 
 ## App Summary
-ERC721 NFTs created after checking proof of ownership via Zokrates
+ERC721 NFTs created after checking proof of ownership via ZoKrates
 NFTs available on OpenSea
 
 ## Running the app
@@ -45,6 +46,7 @@ NFTs available on OpenSea
 - Solidity v0.8.0
 - Web3 v1.3.0
 - Node v14
+- ZoKrates v0.7.6
 
 - These libraries are required for this project. I used more recent versions than in the course outline as I want my learning to be as current as possible.
 
@@ -63,4 +65,4 @@ NFTs available on OpenSea
 * [Open Zeppelin ](https://openzeppelin.org/)
 * [Interactive zero knowledge 3-colorability demonstration](http://web.mit.edu/~ezyang/Public/graph/svg.html)
 * [Docker](https://docs.docker.com/install/)
-* [ZoKrates](https://github.com/Zokrates/ZoKrates)
+* [ZoKrates](https://github.com/ZoKrates/ZoKrates)
