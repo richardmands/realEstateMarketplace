@@ -1,0 +1,158 @@
+.App {
+  margin-top: 60px;
+  position: relative;
+  text-align: center;
+
+  .LoaderFullScreen {
+    background-color: rgba(0, 0, 0, 0.248);
+    display: flex;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    svg {
+      transform: scale(5);
+    }
+  }
+
+  .App-logoContainer {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    height: 240px;
+    margin-bottom: 20px;
+    width: 240px;
+  }
+  
+  .App-logo {
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 5%;
+    height: 200px;
+    margin: auto;
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s ease-in-out;
+    }
+  }
+
+  .App-header {
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    justify-content: center;
+    padding: 50px 0 20px;
+  }
+
+  .explanation {
+    font-size: 16px;
+    max-width: 800px;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: left;
+  }
+  
+  .disabledSection * {
+    opacity: 0.7;
+    pointer-events: none;
+    user-select: none;
+  }
+
+
+  hr {
+    &.section {
+      margin-top: 30px;
+    }
+
+    &.endSection {
+      border-radius: 5px;
+      color: rgb(10, 7, 0);
+      height: 3px;
+    }
+  }
+
+  .form {
+    margin: 20px 0 0;
+  }
+
+  .button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    outline: none;
+    transition: all 0.3s linear;
+    width: 200px;
+    
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+    
+  }
+
+  .submitButton {
+    background-color: lightseagreen;
+    margin: 20px 0 0 auto;
+  }
+
+  .buttonText {
+    margin: auto;
+    padding: 20px;
+  }
+
+  .statuses {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .apiStatus,
+  .contractStatus {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    transition: all 1s;
+    width: 100%;
+    
+    &.operational {
+      background-color: green;
+    }
+    
+    &.notOperational {
+      background-color: red;
+    }
+  }
+
+  .apiStatus {
+    border-top: 1px solid white;
+  }
+}
+
