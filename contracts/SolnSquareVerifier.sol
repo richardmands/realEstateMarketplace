@@ -38,8 +38,7 @@ contract SolnSquareVerifier is Verifier, CustomERC721Token {
     //  - make sure you handle metadata as well as tokenSuplly
     function mintNFT(address owner, uint id, Proof memory proof, uint[2] memory input) public returns ( bool ) {
         require(verifyTx(proof, input), "Sorry, you need to provide proof of ownership.");
-        // bytes memory solutionHash = abi.encodePacked(uint[input[0], input[1], proof.a[0]]);
-
+        
         bytes32 solutionHash = keccak256(abi.encodePacked(input, proof.a.X, proof.a.Y, proof.b.X, proof.b.Y, proof.c.X, proof.c.Y));
         
         require(uniqueSolutions[solutionHash] == address(0), "Sorry, not a unique solution");
