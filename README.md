@@ -14,6 +14,7 @@ https://rinkeby.etherscan.io/tx/0x2e1ae78e4b805316288fab2211837c60c7cbf7c34a5637
 
 ## App Summary
 ERC721 NFTs created after checking proof of ownership via ZoKrates
+
 NFTs available on OpenSea
 
 ## Running the app
