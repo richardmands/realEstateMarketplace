@@ -1,7 +1,5 @@
 # Real Estate Marketplace Capstone
-My Version of Udacity Real Estate Marketplace
-
-The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
+My Version of Udacity Real Estate Marketplace Capstone project.
 
 This repository contains Smart Contract code in Solidity (using Truffle), tests (also using Truffle), dApp scaffolding (React) and ZoKrates for simulated verification of ownership.
 
